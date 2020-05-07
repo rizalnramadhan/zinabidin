@@ -18,3 +18,5 @@ fields:
   name: categories
   label: No. Issue
   description: Nomor Issue yang memuat artikel.
+pages:
+- _posts/memelihara-burung-yang-langka.md
