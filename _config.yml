@@ -40,7 +40,7 @@ defaults:
       type:      "issue"
     values:
       layout:    "issue"
-      permalink: /:name
+      permalink: /issue-:tag
   -
     scope:
       path:      ""
