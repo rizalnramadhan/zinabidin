@@ -18,5 +18,3 @@ fields:
   name: categories
   label: No. Issue
   description: Nomor Issue yang memuat artikel.
-pages:
-- _posts/issue-03/2020-05-07-memelihara-burung-yang-langka.md
