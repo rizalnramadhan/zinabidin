@@ -4,7 +4,8 @@ author: Daigo Uehara
 footer: Daigo Uehara merupakan seorang pemain Street Fighter profesional. Ia telah
   memenangkan berbagai kejuaraan di seluruh dunia. Kini, Daigo menikmati hidupnya
   dengan memelihara berbagai burung dan unggas.
-categories: []
+categories:
+- '04'
 
 ---
 ![](https://www.smartmastering.com/images/burung-cucak-rowo.jpg)
