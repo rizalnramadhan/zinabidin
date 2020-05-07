@@ -10,11 +10,15 @@ sections:
 - type: jekyll-posts
   label: Posts
   create: all
+  templates:
+  - artikel
 - type: directory
   path: _issue
   label: Issue
-  create: all
+  create: documents
   match: "**/*"
+  templates:
+  - issue
 upload_dir: assets/img
 public_path: "/assets/img"
 front_matter_path: ''
