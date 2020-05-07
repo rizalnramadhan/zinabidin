@@ -17,3 +17,5 @@ fields:
   description: 'Cover Issue (ukuran maksimal: 500Kb).'
   config:
     maxSize: 0.5
+pages:
+- _issue/burung-papa-tidak-sakit.md
