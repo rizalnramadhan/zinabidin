@@ -4,10 +4,16 @@ hide_body: false
 fields:
 - type: text
   name: tag
-  label: tag
+  label: Issue
+  default: '01'
+  description: Nomor Issue.
 - type: text
   name: title
-  label: title
+  label: Judul
+  description: Judul Issue.
 - type: file
   name: cover
-  label: cover
+  label: Cover
+  description: 'Cover Issue (ukuran maksimal: 500Kb).'
+  config:
+    maxSize: 0.5
