@@ -4,13 +4,17 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: title
+  label: Judul
+  description: Judul artikel.
 - type: text
   name: author
-  label: author
+  label: Penulis
+  description: Penulis artikel.
 - type: textarea
   name: footer
-  label: footer
+  label: Biografi Penulis
+  description: Biografi singkat penulis artikel.
 - type: list
   name: categories
-  label: categories
+  label: No. Issue
+  description: Nomor Issue yang memuat artikel.
