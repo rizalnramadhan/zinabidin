@@ -1,0 +1,13 @@
+---
+label: Issue
+hide_body: false
+fields:
+- type: text
+  name: tag
+  label: tag
+- type: text
+  name: title
+  label: title
+- type: file
+  name: cover
+  label: cover
