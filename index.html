@@ -1,63 +1,34 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+---
+layout: default
+title: Zin Abidin
+---
+<div class="transparent z-1 vh-100 absolute right-0 flex justify-center items-center">
+  <img class="w-60-l w-90 flip-vertical-right" src="assets/logo.svg" alt="">
+</div>
 
-<head>
-  <meta charset="utf-8">
-  <title>Zin Abidin</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" integrity="sha256-+dIh4jG2jQTHZwW81yUo8h6tzXWcNumyNL5XPZbwp1E=" crossorigin="anonymous" />
-  <link rel="stylesheet" type="text/css" href="/assets/main.css" charset="utf-8" />
-</head>
+<div id="fullpage">
 
-<body>
-  <header class="z-max fixed top-0 h-100 bg-white br">
-    <nav class="flex flex-column-ns">
-      <a class="link bb black hover-bg-light-silver vh-third flex items-center justify-center" href="#"><img class="pa2" src="assets/nav/Issue.svg" alt=""></a>
-      <a class="link bb black hover-bg-light-silver vh-third flex items-center justify-center" href="#"><img class="pa2" src="assets/nav/Tentang.svg" alt=""></a>
-      <a class="link bb black hover-bg-light-silver vh-third flex items-center justify-center" href="#"><img class="pa2" src="assets/nav/Kontak.svg" alt=""></a>
-    </nav>
-  </header>
-
-  <div class="transparent z-1 w-100 vh-100 flex justify-center items-center fixed">
-    <img class="w-50-ns w-80 flip-vertical-right" src="assets/logo2.svg" alt="">
+  {% for issue in site.issue reversed %}
+  <div class="section mv0 w-100 vh-100 cover flex items-end justify-end" style="background:url({{issue.cover}}) center">
+    <a href="{{issue.url | relative_url}}" class="link flex flex-column white underline-hover tr f-headline-ns f2 pa4-ns pa2 w-70-ns w100">
+      <span>Issue #{{issue.tag}}</span>
+      <span>{{issue.title}}</span>
+    </a>
   </div>
+  {% endfor %}
 
-  <div id="fullpage" class="container fr">
+</div>
 
-    <div class="section w-100 vh-100 cover flex items-end justify-end" style="background:url(assets/img/ichi.png) center">
-      <a href="#" class="link flex flex-column white underline-hover tr f-headline pa4 w-70">
-        <span>Issue #01</span>
-        <span>A Very Bad Quack Might Jinx The Zippy Fowls</span>
-      </a>
-    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.extensions.min.js" integrity="sha256-pwVO9xs/zTEUDEzK1G4AbAAZbAzmU30SniNu2b9O0UY=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js" integrity="sha256-caNcSA0LvOCX90PTuEbwl+V09xPMca13CJUasl+VCtk=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+  new fullpage('#fullpage', {
+    //options here
+    autoScrolling: true,
+    verticalCentered: false,
+    dragAndMove: true,
+  });
 
-    <div class="section w-100 vh-100 cover flex items-end justify-end" style="background:url(assets/img/ichi2.png) center">
-      <a href="#" class="link flex flex-column white underline-hover tr f-headline pa4 w-70">
-        <span>Issue #02</span>
-        <span>Jinxed Wizards Pluck Ivy From The Big Quilt</span>
-      </a>
-    </div>
-
-    <div class="section w-100 vh-100 cover flex items-end justify-end" style="background:url(assets/img/Untitled.png) center">
-      <a href="#" class="link flex flex-column white underline-hover tr f-headline pa4 w-70">
-        <span>Issue #03</span>
-        <span>The Quick Brown Fox Jumps Over The Lazy Dog</span>
-      </a>
-    </div>
-  </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.extensions.min.js" integrity="sha256-pwVO9xs/zTEUDEzK1G4AbAAZbAzmU30SniNu2b9O0UY=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js" integrity="sha256-caNcSA0LvOCX90PTuEbwl+V09xPMca13CJUasl+VCtk=" crossorigin="anonymous"></script>
-  <script type="text/javascript">
-    new fullpage('#fullpage', {
-      //options here
-      autoScrolling: true,
-      verticalCentered: false,
-      dragAndMove: true,
-    });
-
-    //methods
-    fullpage_api.setAllowScrolling(true);
-  </script>
-</body>
-
-</html>
+  //methods
+  fullpage_api.setAllowScrolling(true);
+</script>
