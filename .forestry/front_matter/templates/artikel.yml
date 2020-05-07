@@ -18,6 +18,3 @@ fields:
   name: categories
   label: No. Issue
   description: Nomor Issue yang memuat artikel.
-pages:
-- _posts/issue-04/unggas-unggas-yang-beterbangan-di-kulon.md
-- _posts/memelihara-burung-yang-langka.md
