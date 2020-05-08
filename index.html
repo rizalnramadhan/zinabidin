@@ -33,3 +33,15 @@ title: Zin Abidin
   //methods
   fullpage_api.setAllowScrolling(true);
 </script>
+
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
