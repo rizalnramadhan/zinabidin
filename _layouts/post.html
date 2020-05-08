@@ -1,18 +1,19 @@
 ---
 layout: default
 ---
+{%  assign author = site.data.author[page.author] %}
 <div class="fl w-50-l w-70-m mh6-ns mh3 mv4-ns mv5">
   <div class="fl">
     <div class="mb2 ttc f6"> Issue #{{page.categories}} - {{ page.date | date: "%b %Y"}} </div>
     <div class="mb2 f1-ns f2 black"> {{page.title}} </div>
-    <div class="mb2 f3-ns f4"> {{page.author}} </div>
+    <div class="mb2 f3-ns f4"> {{author.name}} </div>
 
     <div class="fl lh-copy post">
 
       {{content}}
 
       <div class="f7 mv5 pt3 bt">
-        {{page.footer}}
+        {{author.bio}}
       </div>
     </div>
   </div>
