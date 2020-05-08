@@ -1,5 +1,6 @@
 ---
 title: Panen Jambu Tahun Ini Sangat Memuaskan
+category: "05"
 date: 2020-05-08T15:05:14.530Z
 cover: /assets/img/cesar-couto-420981-unsplash.jpg
 ---
