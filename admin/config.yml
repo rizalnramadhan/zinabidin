@@ -27,3 +27,4 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Judul", name: "title", widget: "string"}
       - {label: "Penulis", name: "author", widget: "string"}
+      - {label: "Nomor Issue", name: "categories", widget: "string"}
