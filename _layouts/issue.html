@@ -9,7 +9,7 @@ layout: default
     </div>
 
     <div class="flex flex-column white tr f-headline-l f-subheadline-m f2 pa4-ns pa3 w-70-ns w-90">
-      <span>Issue #{{page.tag}}</span>
+      <span>Issue #{{page.category}}</span>
       <span>{{page.title}}</span>
     </div>
   </div>
@@ -22,7 +22,7 @@ layout: default
   <div class="mh6-ns mh3 mb5 w-60-ns lh-title">
     <h2 class="lh-solid">Daftar Isi</h2>
 
-    {%  for post in site.categories[page.tag] %}
+    {%  for post in site.categories[page.category] %}
       <a class="link black" href="{{post.url}}">
         <div class="f4"> {{post.title}} </div>
         <div class="mb2 f6"> {{post.author}} </div>
