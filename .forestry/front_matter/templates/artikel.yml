@@ -4,10 +4,16 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: title
+  label: Judul
 - type: text
   name: author
-  label: author
+  label: Penulis
 - type: list
   name: categories
-  label: categories
+  label: Issue
+  config:
+    use_select: true
+    source:
+      type: pages
+      section: issue
+      file: _issue/kuda.md
