@@ -1,6 +1,7 @@
 ---
 label: Author
 hide_body: true
+display_field: name
 fields:
 - type: field_group
   name: kiryu
@@ -72,3 +73,8 @@ fields:
   - type: text
     name: bio
     label: bio
+- name: name
+  type: text
+  config:
+    required: false
+  label: Nama
