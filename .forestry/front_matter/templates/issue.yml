@@ -21,3 +21,5 @@ fields:
     maxSize: 1
   label: Sampul
   description: Gambar sampul issue
+pages:
+- _issue/kuda-kuda-berlarian-dengan-bebas-di-kota-ini.md
