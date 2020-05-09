@@ -15,5 +15,3 @@ fields:
     min: 2
   label: Issue
   description: Nomor issue yang memuat artikel ini.
-pages:
-- _posts/issue-03/every-tuesday-thursday-7pm-9pm.md
