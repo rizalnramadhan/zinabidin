@@ -3,13 +3,21 @@ label: Issue
 hide_body: true
 display_field: name
 fields:
-- name: name
+- name: title
   type: text
   config:
     required: true
-  label: Nama
-- name: bio
+  label: Judul
+- name: category
   type: text
   config:
-    required: false
-  label: Bio
+    required: true
+    min: 2
+  label: Nomor Issue
+  description: 'Contoh: 01, 03, 152, dst.'
+- name: cover
+  type: file
+  config:
+    maxSize: 1
+  label: Sampul
+  description: Gambar sampul issue
