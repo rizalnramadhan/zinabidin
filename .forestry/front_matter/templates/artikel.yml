@@ -1,0 +1,33 @@
+---
+label: Artikel
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: Judul
+- name: author
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: data
+      file: _data/author.yml
+      path: 
+  label: Penulis
+- name: categories
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: pages
+      section: issue
+      file: 
+      path: 
+  label: Nomor Issue
+pages:
+- _posts/issue-03/menghubungkan-sejarah-babilonia-yang-hilang.md
