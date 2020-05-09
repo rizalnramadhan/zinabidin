@@ -17,3 +17,5 @@ fields:
       type: pages
       section: issue
       file: _issue/kuda.md
+pages:
+- _posts/issue-03/every-tuesday-thursday-7pm-9pm.md
