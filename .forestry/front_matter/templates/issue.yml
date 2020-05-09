@@ -2,19 +2,13 @@
 label: Issue
 hide_body: false
 fields:
-- type: text
-  name: title
-  label: Judul
-- type: file
-  name: cover
-  label: Gambar sampul
-  config:
-    maxSize: 1
-- type: text
-  name: category
-  label: Nomor Issue
+- name: name
+  type: text
   config:
     required: true
-    min: 2
-    max: 2
-  description: 'Nomor issue dengan format dua digit angka (contoh: 01, 03, 13, dst).'
+  label: Nama
+- name: bio
+  type: text
+  config:
+    required: false
+  label: Bio
