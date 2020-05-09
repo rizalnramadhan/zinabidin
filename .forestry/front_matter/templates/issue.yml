@@ -1,7 +1,7 @@
 ---
 label: Issue
-hide_body: true
-display_field: name
+hide_body: false
+display_field: category
 fields:
 - name: title
   type: text
