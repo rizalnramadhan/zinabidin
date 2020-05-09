@@ -18,8 +18,14 @@ fields:
       path: 
   label: Penulis
 - name: categories
-  type: text
+  type: select
+  default: []
   config:
-    required: true
-    min: 2
+    required: false
+    options: []
+    source:
+      type: pages
+      section: issue
+      file: 
+      path: 
   label: Nomor Issue
