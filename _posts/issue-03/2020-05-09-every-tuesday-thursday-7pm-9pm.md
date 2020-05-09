@@ -1,6 +1,6 @@
 ---
 title: Every Tuesday & Thursday 7PM-9PM
-author: Muhammad Amin
+author: kiryu
 categories: '03'
 
 ---
