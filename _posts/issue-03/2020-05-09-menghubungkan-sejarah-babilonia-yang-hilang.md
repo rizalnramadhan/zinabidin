@@ -1,6 +1,6 @@
 ---
 author: akira
-categories: _issue/tidak.md
+categories: _issue/kuda.md
 title: Menghubungkan Sejarah Babilonia yang Hilang
 
 ---
