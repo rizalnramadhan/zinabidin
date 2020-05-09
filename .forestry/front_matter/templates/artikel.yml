@@ -24,7 +24,7 @@ fields:
     required: false
     options: []
     source:
-      type: pages
+      type: documents
       section: issue
       file: 
       path: 
