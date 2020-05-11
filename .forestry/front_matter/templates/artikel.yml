@@ -6,26 +6,14 @@ fields:
   name: title
   label: Judul
 - name: author
-  type: select
-  default: []
+  type: text
   config:
-    required: false
-    options: []
-    source:
-      type: documents
-      section: data
-      file: _data/author.yml
-      path: 
+    required: true
   label: Penulis
 - name: categories
-  type: select
-  default: []
+  type: text
   config:
-    required: false
-    options: []
-    source:
-      type: pages
-      section: issue
-      file: 
-      path: 
+    required: true
+    min: 2
   label: Nomor Issue
+  description: 'Contoh: 01, 03, 125, dst'
