@@ -78,6 +78,3 @@ fields:
   config:
     required: false
   label: Nama
-pages:
-- _data/author.yml
-- _data/biji.yml
