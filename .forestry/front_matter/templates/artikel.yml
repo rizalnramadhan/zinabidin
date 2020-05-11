@@ -17,5 +17,3 @@ fields:
     min: 2
   label: Nomor Issue
   description: 'Contoh: 01, 03, 125, dst'
-pages:
-- _posts/burung-papa-tidak-sakit.md
