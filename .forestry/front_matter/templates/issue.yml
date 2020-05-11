@@ -20,6 +20,6 @@ fields:
   config:
     maxSize: 1
   label: Sampul
-  description: Gambar sampul issue
+  description: Gambar sampul issue (nama file tidak boleh mengandung spasi).
 pages:
 - _issue/memelihara-burung-yang-langka.md
